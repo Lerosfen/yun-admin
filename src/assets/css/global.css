@@ -1,0 +1,42 @@
+/*基类*/
+body{
+  margin: 0!important;
+  padding: 0;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clearfix:before,.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide{
+  display: none;
+}
+.block{
+  display: block;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:active{
+  color: white;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+

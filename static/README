@@ -1,0 +1,38 @@
+// 需要用什么组件 先在这个文件里找有没有用到，如果没有再自己安装引入，然后再这里备注，方便别人查阅
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
+使用方法
+  1、 将工程下载下来
+  2、 在本地用dos窗口命令行打开文件夹，运行  npm install 安装依赖
+  3、npm run dev 运行项目
+
+  目前引入的组件依赖
+  vue-router
+  element-ui（安装但目前没有使用）
+  <?
+      // 这里写已经使用的组件
+  ?>
+  vuex
+  vue-resource <? http依赖>
+  es6-promise/auto <? 让IE兼容promise>
+
+
+

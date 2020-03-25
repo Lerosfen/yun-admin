@@ -1,0 +1,147 @@
+//样式重置
+@import "./_variables.less";
+@iceYellow: #CCA81E;
+@iceBlue: #01C4C8;
+html {
+  font-size: @font-size-root;
+  height:100%;
+  font-family:"Microsoft YaHei",sans-serif;
+}
+
+button {
+  font-family:"Microsoft YaHei",sans-serif!important;
+}
+
+
+body {
+  position: relative;
+  height:auto;
+  font: @font-size-root @font-family-sans-serif!important;
+  background-color: @body-background;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Remove highlight on tap event*/
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: @font-family-sans-serif!important;
+}
+p{
+  margin: 0 ;
+}
+
+input[type="text"],input[type="date"]{
+  outline:none;
+}
+.user-select-none(){
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+//@media screen and (max-width: 321px) {
+//  body {
+//    font-size: @font-size-root;
+//  }
+//}
+//
+//@media screen and (min-width: 321px) and (max-width: 400px) {
+//  body {
+//    font-size: @font-size-root + 1;
+//  }
+//}
+//
+//@media screen and (min-width: 400px) {
+//  body {
+//    font-size: @font-size-root + 2;
+//  }
+//}
+/* all */
+input::-webkit-input-placeholder{ color:#999; }
+input:-moz-placeholder{color:#999; }
+input:-ms-input-placeholder	{color:#999;}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+ol, ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+caption, th {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+a:active, a:hover, a:visited {
+  color: white;
+}
+a.link:active, a.link:hover, a.link:visited {
+  color: white;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+i {
+  font-style :normal
+}
+
+/*去除页面滚动条  全局*/
+::-webkit-scrollbar {
+  display:none
+}
+html::-webkit-scrollbar {display:none}
+
+
+/*  直水平居中 */
+.positionRelative(){
+  position: relative;
+}
+.positionAbsolute(){
+  position: absolute;
+}
+// 水平居中
+.box-center(){
+  .positionAbsolute();
+  left: 50%;
+  transform: translateX(-50%);
+}
+// 垂直居中
+.box-middle-center(){
+  .positionAbsolute();
+  top: 50%;
+  transform: translateY(-50%);
+}
+//垂直且水平居中
+.box-hor-ver-center{
+  .positionAbsolute();
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+
+

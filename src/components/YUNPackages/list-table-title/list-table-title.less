@@ -1,0 +1,52 @@
+.list-title{
+  .arr-group{
+    position:relative;
+    top:4px;
+    .arr-right{
+      position:absolute;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid #000;
+      border-right: 2px solid #000;
+      transform: rotate(45deg);
+      top:0;
+    }
+    .arr-right:first-child{
+      left:0;
+      opacity: .5;
+    }
+    .arr-right:nth-child(2){
+      left:6px;
+      opacity: .7;
+    }
+    .arr-right:last-child{
+      left:12px;
+    }
+  }
+  .titles{
+    margin-left:30px;
+    color: #616161 ;
+  }
+  .go-back{
+    .square{
+      width: 8px;
+      height: 25px;
+      background: #00a6f2;
+      transform: skew(-38deg);
+      margin-right:-10px;
+    }
+    .btn-back{
+      width: 100px;
+      height: 25px;
+      line-height: 25px;
+      background: url("../../../assets/img/rightList/up.png") no-repeat top left;
+      text-align: center;
+      font-size: 14px;
+      margin-left: -5px;
+      cursor: pointer;
+    }
+
+  }
+
+}

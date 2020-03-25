@@ -1,0 +1,299 @@
+.visualization-general{
+  display: flex;
+  //height: inherit;
+  height: 100%;
+  .aside{
+    border: solid 1px #2ecdf2;
+    width: 384px;
+    height: 100%;
+    .title{
+      position: relative;
+      height: 60px;
+      .bg-img{
+        width: 100%;
+        display: inline-block;
+        background: url("../../../assets/img/basicbaseVisul/general/leftmAsideTitle.png") 100% 100% no-repeat;
+        height: 45px;
+        position: absolute;
+        z-index:300;
+        left: -126px;
+      }
+      .iocn-left{
+        width: 42px;
+        height: 37px;
+        display: inline-block;
+        background: url("../../../assets/img/basicbaseVisul/general/titleIconDepartment.png") 100% 100% no-repeat;
+        position: absolute;
+        top:4px;
+        margin-left: 20px;
+        margin-right: 20px;
+        z-index: 666;
+      }
+      >div{
+        position: relative;
+        left: 86px;
+        font-size: 18px;
+        display: inline-block;
+        top: 9.5px;
+      }
+      &:after{
+        content: "";
+        width: 54px;
+        height: 52px;
+        background: url("../../../assets/img/basicbaseVisul/general/leftArrow.png") 100% 100% no-repeat;
+        display: inline-block;
+        right: -75px;
+        top: 60px;
+        position: absolute;
+      }
+    }
+    .list{
+      height: 88%;
+      display: flex;
+      justify-content: center;
+      /*overflow-y: scroll;
+      overflow-y: hidden;*/
+      overflow-y: scroll;
+      position: relative;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .asideList-bg{
+        width: 340px;
+        height: 150px;
+        background: url("../../../assets/img/basicbaseVisul/general/sideBackground.png") 100% 100% no-repeat;
+        margin-bottom: 8px;
+      }
+      .topDepartment-title{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 38px;
+        top: 25px;
+        position: relative;
+        &:nth-child(1){
+          font-size: 10px;
+          color: #dddfde;
+        }
+        span:nth-child(2){
+          font-size: 12px;
+          color: #fcb948;
+          font-weight: 900;
+        }
+      }
+      .bottomDepartment-title{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 38px;
+        top: 60px;
+        position: relative;
+        &:nth-child(1){
+          color: #dddfde;
+        }
+        span:nth-child(2){
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .main{
+    .list-container {
+      //height: 100%;
+    }
+    width: calc(100% - 384px - 100px);
+    margin-left: 100px;
+    border: solid 1px #2ecdf2;
+    position: relative;
+    &:before{
+      content: "";
+      width: 54px;
+      height: 52px;
+      background: url("../../../assets/img/basicbaseVisul/general/rightArrow.png") 100% 100% no-repeat;
+      display: inline-block;
+      left: -75px;
+      bottom: 60px;
+      position: absolute;
+    }
+    .row-title{
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      align-items: center;
+      span{
+        position: relative;
+        flex: 1;
+        .title_bg{
+          height: 45px;
+        }
+        .icon{
+          position: absolute;
+          top: 8px;
+          left: 25px;
+        }
+        >div{
+          position: absolute;
+          top: 15px;
+          left: 80px;
+        }
+      }
+      >div{
+        .el-button{
+          background: #00b1dd;
+          border: none;
+          color: #fff;
+          padding-left: 30px;
+          padding-right: 30px;
+          z-index: 4000;
+          position: relative;
+        }
+        >span{
+          margin-right: 30px;
+          margin-left: 30px;
+          b{
+            color: #32cf88;
+            font-size: 22px;
+            margin-right: 10px;
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      >div{
+        //float: left;
+        //box-sizing: border-box;
+        //justify-content: flex-start;
+        //margin-left: -3px;
+        width: 100/7%;
+        display: flex;
+        justify-content: center;
+        .bg-purple {
+          position: relative;
+          width: 150px;
+          height: 150px;
+          //margin-right: 50px;
+          background: url("../../../assets/img/basicbaseVisul/general/uncheck.png") 100% 100% no-repeat;
+          &.active{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin-right: 50px;
+            background: url("../../../assets/img/basicbaseVisul/general/selected.png") 100% 100% no-repeat;
+          }
+          h5{
+            position: absolute;
+            left: 22px;
+            top:15px;
+            font-size: 8px;
+          }
+          h4{
+            position: absolute;
+            top:30px;
+            left: 22px;
+            font-size: 15px;
+          }
+          p{
+            position: absolute;
+            bottom:50px;
+            left: 22px;
+            color: #fcb948;
+            font-size: 10px;
+          }
+          div {
+            position: absolute;
+            bottom: 40px;
+            left: 22px;
+            font-size: 6px;
+            color: #fcb948;
+          }
+        }
+        &:nth-child(7n) .bg-purple{
+          margin-right: 0;
+        }
+      }
+    }
+
+    .el-row {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .model-bg{
+      &.el-dialog__wrapper{
+        /deep/ .el-dialog{
+          background: #020f22;
+          color: #fff;
+          .el-dialog__body{
+            width: 95% !important;
+            .el-table__header-wrapper{
+              //width: 95%;
+            }
+            padding: 0;
+            margin-top: -15px;
+            thead {
+              background: red;
+              > tr{
+                background: url(../../../assets/img/basicbaseVisul/general/modelTitleBg.png) no-repeat top left;
+                background-size: 100% 100%;
+              }
+            }
+          }
+          .el-dialog__title{
+            color: #fff;
+            font-size: 15px;
+          }
+        }
+        .el-dialog__header{
+          text-align: left;
+        }
+        .el-dialog--center {
+          text-align:left;
+          background: #020f22;
+        }
+
+
+      }
+    }
+  }
+  .page-bottom{
+    position: absolute;
+    bottom: 15px;
+  }
+  .page{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%);
+
+    //分页
+    .el-pagination {
+      color: #f2f2f2;
+      .el-pager .btn-quicknext, .el-pager .btn-quickprev {
+        color: #fff;
+      }
+      .el-pager li:hover {
+        color: #409eff;
+      }
+      .btn-prev, .btn-next {
+        position: relative;
+        color: #f2f2f2;
+        background-size: 100% 100%;
+      }
+      .btn-prev {
+        background: url("../../../assets/img/rightList/up.png") no-repeat top left;
+      }
+      .btn-next {
+        background: url("../../../assets/img/rightList/next.png") no-repeat top right;
+      }
+      .el-pager li {
+        background-color: transparent;
+      }
+      > button {
+        min-width: 110px;
+      }
+    }
+  }
+}

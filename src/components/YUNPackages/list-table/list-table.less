@@ -1,0 +1,135 @@
+.table-continer {
+  margin-top: 10px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  .el-table {
+    color: #f2f2f2;
+    background: transparent;
+    thead {
+      color: #00f1f5;
+      > tr {
+        background: url("../../../assets/img/rightList/header.png") no-repeat top left;
+        background-size: 100% 100%;
+      }
+    }
+    th {
+      background-color: transparent;
+      padding: 12px 0;
+    }
+    tr {
+      background-color: transparent;
+    }
+    td {
+      border-bottom: 1px solid transparent;
+      padding: 0;
+    }
+    .el-button--text {
+      color: #fff;
+    }
+    .el-button--text:focus, .el-button--text:hover {
+      color: #409EFF;
+    }
+    .el-table__row--striped td {
+      background-color: #022942 !important;
+    }
+    .el-table__row--striped .current-row > td {
+      background-color: #022942;
+    }
+    th.is-leaf {
+      border-bottom: 1px solid transparent;
+    }
+    .el-table__row--striped {
+      background-color: #022942;
+    }
+    .el-button {
+      border: 0;
+      padding: 0 !important;
+    }
+  }
+  .el-table::before {
+    background-color: transparent;
+  }
+  .el-table__fixed-right::before, .el-table__fixed::before {
+    background-color: transparent;
+  }
+  .el-table__fixed-right .hover-row > td {
+    background: transparent;
+  }
+  .el-table__body-wrapper .hover-row > td {
+    background: transparent;
+  }
+  .el-table__body-wrapper .el-table__row.current-row > td {
+    background-color: transparent !important;
+  }
+  .el-table__body-wrapper .el-table__row--striped .current-row > td {
+    background-color: #022942 !important;
+  }
+  .el-table__body-wrapper.el-table__row :hover{
+    background-color: transparent;
+  }
+  .el-checkbox__inner{
+    border-color: rgb(0,101,109);
+    background-color:transparent;
+    box-shadow: 0px 0px 15px 0px rgb(0, 101, 109,.3) inset;
+    &:after{
+      border-color: rgb(244,200,16);
+    }
+    &:before{
+      background-color: rgb(244,200,16) !important;
+    }
+  }
+  .el-table__body-wrapper .el-table__row .el-checkbox__inner{
+    border-color: rgb(0,101,109);
+    background-color:transparent;
+  }
+  .el-checkbox__input.is-checked .el-checkbox__inner{
+    border-color: rgb(1,195,205);
+    background-color:transparent;
+  }
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+    border-color: rgb(1,195,205);
+    background-color:transparent;
+  }
+  .el-table__header-wrapper.el-checkbox__input.el-checkbox__inner:focus{
+    border-color: rgb(1,195,205)!important;
+  }
+  .el-table__fixed-body-wrapper .current-row > td {
+    background: transparent;
+  }
+  .el-table--striped .el-table__body tr.el-table__row--striped.current-row td {
+    background-color: #022942 !important;
+  }
+  .el-pagination {
+    color: #f2f2f2;
+    padding: 0 300px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    .el-pager .btn-quicknext, .el-pager .btn-quickprev {
+      color: #fff;
+    }
+    .el-pager li:hover {
+      color: #409eff;
+    }
+    .btn-prev, .btn-next {
+      position: relative;
+      color: #f2f2f2;
+      background-size: 100% 100%;
+    }
+    .btn-prev {
+      background: url("../../../assets/img/rightList/up.png") no-repeat top left;
+    }
+    .btn-next {
+      background: url("../../../assets/img/rightList/next.png") no-repeat top right;
+    }
+    .el-pager li {
+      background-color: transparent;
+    }
+    > button {
+      min-width: 110px;
+    }
+  }
+}
+

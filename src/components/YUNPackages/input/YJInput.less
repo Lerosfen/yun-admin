@@ -1,0 +1,75 @@
+.input-border {
+  color: #f2f2f2;
+  position: relative;
+  > input {
+    background-color: transparent;
+    border: 0;
+    padding: 0 5px;
+    color: #f2f2f2;
+    outline: none;
+  }
+  .honer-left, .honer-right {
+    display: inline-block;
+    width: 1px;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    &:before, &:after {
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 3px;
+    }
+    &:before {
+      top: -2px;
+      left: -2px;
+    }
+    &:after {
+      bottom: -2px;
+      left: -2px;
+    }
+  }
+  .honer-left {
+    left: 0;
+  }
+  .honer-right {
+    right: -2px;
+  }
+}
+
+.input-yellow {
+  width: 150px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid rgb(72, 60, 13);
+  box-shadow: 0px 0px 20px 0px rgb(72, 60, 13, .5) inset;
+  > input {
+    width: 140px;
+    height: 30px;
+  }
+  .honer-left, .honer-right {
+    &:before, &:after {
+      background: url("../../../assets/img/rightList/horn.png") no-repeat top left;
+      background-size: 100% 100%;
+    }
+  }
+
+}
+
+.input-blue {
+  width: 150px;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid rgb(1, 134, 200);
+  box-shadow: 0px 0px 20px 0px rgb(1, 134, 200, .5) inset;
+  > input {
+    width: 140px;
+    height: 30px;
+  }
+  .honer-left, .honer-right {
+    &:before, &:after {
+      background: url("../../../assets/img/rightList/honer-blue.png") no-repeat top left;
+      background-size: 100% 100%;
+    }
+  }
+}

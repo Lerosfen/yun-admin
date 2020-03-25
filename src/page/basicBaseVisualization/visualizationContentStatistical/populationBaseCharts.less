@@ -1,0 +1,192 @@
+.el-col {
+  height: 100%;
+  > .grid-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 10px);
+
+    > div{
+      position: relative;
+      margin-bottom: 30px;
+      .title{
+        position: absolute;
+        top:5px;
+        left: 20px;
+        font-weight: bold;
+      }
+      .middle{
+        position: absolute;
+        //bottom: 10px;
+        //left:50% ;
+        //transform: translateX(50%);
+        width: 100%;
+        top: 40px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >span{
+          width: 135px;
+          height: 134px;
+          //transform: translate(50%);
+          background: url(../../../assets/img/basicbaseVisul/statical/bg_num_1.png) 100% 100% no-repeat;
+          .middle-title{
+            text-align: center;
+            color: #00fffc;
+            >span{
+              font-size: 26px;
+            }
+
+          }
+        }
+        p{
+          padding-left: 30px;
+          margin: 10px 0;
+        }
+      }
+      .bottom {
+        position: absolute;
+        //bottom: 10px;
+        //left:50% ;
+        //transform: translateX(50%);
+        width: 100%;
+        top: 40px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >span{
+          position: relative;
+          width: 132px;
+          height: 172px;
+          //transform: translate(50%);
+          background: url(../../../assets/img/basicbaseVisul/statical/bg_num_2.png) 100% 100% no-repeat;
+          img{
+           // position: absolute;
+            //top:10px;
+            //left: 20px;
+            margin-left: 20px;
+            margin-top: 20px;
+          }
+          .markedness-title{
+            //position: relative;
+            //text-align: center;
+            padding-left: 20px;
+            padding-top: 5px;
+            color: #fff;
+            >span{
+              font-size: 26px;
+              color: #00fffc;
+            }
+          }
+          P{
+            padding-left: 20px;
+            margin-top: 10px;
+          }
+        }
+      }
+      .chart{
+        position: absolute;
+        top: 50px;
+        left: 30px;
+      }
+    }
+    & :last-child{
+      margin-bottom:0;
+    }
+  }
+  >.grid-center{
+    text-align: center;
+    position: relative;
+    >.title{
+      position: absolute;
+      top:5px;
+      left: 20px;
+      font-weight: bold;
+    }
+    .select{
+      position: absolute;
+      top: 50px;
+      right: 20px;
+    }
+    .chart{
+      position: absolute;
+      top: 30px;
+      left: 10px;
+    }
+    .ring-bottom{
+      position: absolute;
+      bottom: 300px;
+      left: 10px;
+    }
+    & :last-child{
+      margin-bottom:0;
+    }
+  }
+  >.grid-right{
+    >img{
+      margin-bottom: 30px;
+    }
+    > div{
+      position: relative;
+      margin-bottom: 30px;
+      >.title{
+        position: absolute;
+        top:5px;
+        left: 20px;
+        font-weight: bold;
+      }
+      .chart{
+        position: absolute;
+        top: 30px;
+        left: 10px;
+      }
+      .middle{
+        position: absolute;
+        //bottom: 10px;
+        //left:50% ;
+        //transform: translateX(50%);
+        width: 100%;
+        top: 40px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >span{
+          width: 135px;
+          height: 134px;
+          //transform: translate(50%);
+          background: url(../../../assets/img/basicbaseVisul/statical/bg_num_1.png) 100% 100% no-repeat;
+          .middle-title{
+            text-align: center;
+
+            color: #fff;
+            >span{
+              font-size: 26px;
+              color: #00fffc;
+
+            }
+
+          }
+        }
+        p{
+          padding-left: 30px;
+          margin: 10px 0;
+
+        }
+      }
+    }
+
+    & :last-child{
+      margin-bottom:0;
+    }
+  }
+}
+

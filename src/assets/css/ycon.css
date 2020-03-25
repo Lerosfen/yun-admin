@@ -1,0 +1,52 @@
+.ycon{
+  height: 30px;
+  width: 30px;
+}
+.ycon-small{
+  height: 20px;
+  width: 20px;
+}
+.ycon-2x{
+  height: 60px;
+  width: 60px;
+}
+.ycon-user{
+  background: url("../img/icon/user.png") no-repeat;
+  background-size: contain;
+}
+.ycon-search{
+  background: url("../img/icon/search.png") no-repeat;
+  background-size: contain;
+}
+.ycon-close{
+  background: url("../img/icon/close.png") no-repeat;
+  background-size: contain;
+}
+.ycon-add{
+  background: url("../img/icon/add.png") no-repeat;
+  background-size: contain;
+}
+.ycon-internet{
+  background: url("../img/icon/internet.png")  no-repeat;
+  background-size: contain;
+}
+.ycon-box{
+  background: url("../img/icon/01.png") no-repeat;
+  background-size: contain;
+}
+.ycon-gauge{
+  background: url("../img/icon/02.png") no-repeat;
+  background-size: contain;
+}
+.ycon-microchip{
+  background: url("../img/icon/03.png") no-repeat;
+  background-size: contain;
+}
+.ycon-html{
+  background: url("../img/icon/06.png") no-repeat;
+  background-size: contain;
+}
+.ycon-panel{
+  background: url("../img/icon/07.png") no-repeat;
+  background-size: contain;
+}

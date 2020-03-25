@@ -1,0 +1,64 @@
+.inputMl {
+  // margin-left: 40px;
+}
+
+.timer {
+  position: absolute;
+  left: 15%;
+}
+
+.timer-ml {
+  margin-left: 60px;
+  width: 160px
+}
+
+
+.input-group {
+  position: relative;
+
+  .sel-group {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    display: inline-block;
+
+    .honer-left, .honer-right {
+      display: inline-block;
+      width: 1px;
+      height: inherit;
+      position: absolute;
+      top: 0;
+
+      &:before, &:after {
+        position: absolute;
+        content: "";
+        width: 3px;
+        height: 3px;
+        background: url("../../assets/img/rightList/honer-blue.png") no-repeat top left;
+        background-size: 100% 100%;
+      }
+
+      &:before {
+        top: -1px;
+        left: -1px;
+      }
+
+      &:after {
+        bottom: -1px;
+        left: -1px;
+      }
+    }
+
+    .honer-left {
+      left: 0;
+    }
+
+    .honer-right {
+      right: -2px;
+    }
+  }
+}
+
+.dialog-footer {
+  text-align: center;
+}
